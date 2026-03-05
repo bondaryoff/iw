@@ -1,0 +1,125 @@
+<?php
+$assetsPath = get_template_directory_uri() . '/assets/';
+?>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <a href="#" class="footer__logo"><img src="<?= $assetsPath ?>img/logo-light.svg" alt="logo" /></a>
+        <div class="footer__social footer-social">
+          <ul class="footer-social__list">
+            <li>
+              <!-- youtube -->
+              <a href="<?= get_field('youtube_link', 'options') ?>">
+                <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.3912 0.5C17.2457 0.505063 19.3834 0.527002 21.6555 0.623195L22.4619 0.660322C24.7484 0.773392 27.0334 0.969154 28.1678 1.30161C29.6799 1.75052 30.8671 3.05672 31.2688 4.71395C31.9088 7.34662 31.9888 12.4803 31.9984 13.7241L32 13.9806V14.2742C31.9888 15.518 31.9088 20.6534 31.2688 23.2844C30.8623 24.9467 29.6735 26.2545 28.1678 26.6967C27.0334 27.0292 24.7484 27.2249 22.4619 27.338L21.6555 27.3768C19.3834 27.4713 17.2457 27.4949 16.3912 27.4983L16.0152 27.5H15.6072C13.7991 27.4882 6.23711 27.4021 3.83059 26.6967C2.32012 26.2478 1.13126 24.9416 0.729637 23.2844C0.0896046 20.6517 0.00960048 15.518 0 14.2742V13.7241C0.00960048 12.4803 0.0896046 7.34493 0.729637 4.71395C1.13606 3.05166 2.32492 1.74376 3.83219 1.3033C6.23711 0.596193 13.8007 0.510126 15.6088 0.5H16.3912ZM12.799 8.09422V19.9075L22.3995 14.0008L12.799 8.09422Z"
+                    fill="#DBA96F" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <!-- telegram -->
+              <a href="<?= get_field('telegram_link', 'options') ?>">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15 0C6.71625 0 0 6.71625 0 15C0 23.2838 6.71625 30 15 30C23.2838 30 30 23.2838 30 15C30 6.71625 23.2838 0 15 0ZM22.3675 10.2762L19.905 21.8762C19.7237 22.6987 19.2337 22.8988 18.55 22.5113L14.8 19.7487L12.9925 21.4913C12.9039 21.6059 12.7903 21.6987 12.6603 21.7627C12.5303 21.8266 12.3874 21.8599 12.2425 21.86H12.2362L12.5025 18.0425L19.4525 11.765C19.7525 11.4987 19.385 11.3475 18.9862 11.6138L10.4 17.0212L6.7 15.8663C5.9 15.6125 5.8775 15.0663 6.86875 14.6737L21.3263 9.10125C21.9988 8.85625 22.5837 9.26125 22.3662 10.2775L22.3675 10.2762Z"
+                    fill="#DBA96F" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <!-- instagram -->
+              <a href="<?= get_field('instagram_link', 'options') ?>">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.4392 0.00172249C16.4608 -0.00219768 17.4824 0.00806973 18.5037 0.0325215L18.7752 0.0423212C19.0888 0.0535208 19.3982 0.0675203 19.772 0.0843197C21.2615 0.154317 22.2779 0.38951 23.1696 0.735298C24.0936 1.09089 24.8719 1.57247 25.6503 2.35084C26.362 3.05027 26.9128 3.89632 27.2644 4.83016C27.6102 5.72193 27.8454 6.73969 27.9154 8.22924C27.9322 8.60163 27.9462 8.91242 27.9574 9.22601L27.9658 9.4976C27.9906 10.5184 28.0014 11.5396 27.998 12.5607L27.9994 13.6051V15.439C28.0028 16.4606 27.9921 17.4822 27.9672 18.5035L27.9588 18.7751C27.9476 19.0887 27.9336 19.3981 27.9168 19.7718C27.8468 21.2614 27.6088 22.2778 27.2644 23.1695C26.9139 24.1044 26.363 24.9511 25.6503 25.6502C24.9503 26.3619 24.1038 26.9127 23.1696 27.2644C22.2779 27.6102 21.2615 27.8454 19.772 27.9154C19.3982 27.9322 19.0888 27.9462 18.7752 27.9574L18.5037 27.9658C17.4824 27.9907 16.4608 28.0014 15.4392 27.998L14.3949 27.9994H12.5624C11.5408 28.0028 10.5192 27.9921 9.49792 27.9672L9.22633 27.9588C8.89401 27.9467 8.56175 27.9327 8.22959 27.9168C6.74006 27.8468 5.72371 27.6088 4.83056 27.2644C3.89637 26.9135 3.05018 26.3626 2.35129 25.6502C1.63879 24.9507 1.08747 24.1041 0.73577 23.1695C0.389988 22.2778 0.1548 21.2614 0.0848034 19.7718C0.0692122 19.4397 0.0552128 19.1074 0.0428056 18.7751L0.0358061 18.5035C0.00999644 17.4822 -0.00167088 16.4606 0.00080776 15.439V12.5607C-0.00309939 11.5396 0.00716784 10.5184 0.0316063 9.4976L0.0414057 9.22601C0.0526052 8.91242 0.0666044 8.60163 0.0834035 8.22924C0.1534 6.73829 0.388588 5.72333 0.73437 4.83016C1.08627 3.89586 1.63867 3.05004 2.35269 2.35224C3.0511 1.63932 3.89675 1.08749 4.83056 0.735298C5.72371 0.38951 6.73866 0.154317 8.22959 0.0843197L9.22633 0.0423212L9.49792 0.0353216C10.5187 0.0095244 11.5398 -0.00214312 12.561 0.000322644L15.4392 0.00172249ZM14.0001 7.00148C13.0726 6.98837 12.1518 7.15971 11.2912 7.50556C10.4305 7.85141 9.64722 8.36487 8.98673 9.01609C8.32624 9.66732 7.80177 10.4433 7.44379 11.299C7.08581 12.1547 6.90146 13.073 6.90146 14.0005C6.90146 14.9281 7.08581 15.8464 7.44379 16.7021C7.80177 17.5578 8.32624 18.3338 8.98673 18.985C9.64722 19.6362 10.4305 20.1497 11.2912 20.4955C12.1518 20.8414 13.0726 21.0127 14.0001 20.9996C15.8565 20.9996 17.6369 20.2621 18.9496 18.9494C20.2623 17.6367 20.9997 15.8563 20.9997 13.9998C20.9997 12.1434 20.2623 10.363 18.9496 9.05027C17.6369 7.73756 15.8565 7.00148 14.0001 7.00148ZM14.0001 9.80139C14.558 9.79111 15.1123 9.8921 15.6307 10.0985C16.1491 10.3048 16.6212 10.6124 17.0194 11.0033C17.4176 11.3942 17.7339 11.8605 17.9499 12.375C18.1659 12.8895 18.2772 13.4418 18.2772 13.9998C18.2773 14.5578 18.1662 15.1102 17.9505 15.6248C17.7347 16.1394 17.4185 16.6058 17.0204 16.9968C16.6224 17.3878 16.1504 17.6955 15.632 17.9021C15.1137 18.1086 14.5594 18.2098 14.0015 18.1997C12.8876 18.1997 11.8194 17.7572 11.0318 16.9696C10.2442 16.182 9.80171 15.1137 9.80171 13.9998C9.80171 12.886 10.2442 11.8177 11.0318 11.0301C11.8194 10.2425 12.8876 9.79999 14.0015 9.79999L14.0001 9.80139ZM21.3497 4.90156C20.8981 4.91963 20.471 5.11176 20.1578 5.4377C19.8447 5.76364 19.6698 6.1981 19.6698 6.6501C19.6698 7.10209 19.8447 7.53656 20.1578 7.86249C20.471 8.18843 20.8981 8.38056 21.3497 8.39864C21.8138 8.39864 22.2589 8.21427 22.5871 7.88609C22.9153 7.55791 23.0996 7.11281 23.0996 6.6487C23.0996 6.18458 22.9153 5.73948 22.5871 5.4113C22.2589 5.08312 21.8138 4.89876 21.3497 4.89876V4.90156Z"
+                    fill="#DBA96F" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="<?= get_field('f_prop_link', 'options') ?>"
+          class="footer__vacancy"><?= get_field('f_prop_txt', 'options') ?></a>
+      </div>
+      <?php
+      wp_nav_menu([
+        'menu_class' => 'footer__links',
+        'theme_location' => 'bottom',
+      ]);
+      ?>
+      <div class="footer__content">
+        <div class="footer__text">
+          <p><?= get_field('f_inv_txt', 'options') ?></p>
+        </div>
+        <a href="<?= get_field('f_inv_txt_link', 'options') ?>"
+          class="btn-lg btn-lg--accent btn-lg--reverse"><?= get_field('f_btn_inv_txt', 'options') ?></a>
+      </div>
+      <div class="footer__content">
+        <div class="footer__text">
+          <p><?= get_field('f_subs_txt_link', 'options') ?></p>
+        </div>
+        <a href="<?= get_field('f_subs_btn_link', 'options') ?>"
+          class="btn-lg btn-lg--accent btn-lg--reverse"><?= get_field('f_subs_btn_text', 'options') ?></a>
+      </div>
+    </div>
+    <a href="#top" class="go-to-top" type="button">to top</a>
+  </div>
+</footer>
+
+</div>
+<?php wp_footer(); ?>
+<script>
+(function () {
+  function initLangSwitcher() {
+    var ruEl = document.getElementById('ru');
+    var enEl = document.getElementById('en');
+    var switcherEl = document.querySelector('.switcher');
+    if (!ruEl || !enEl || !switcherEl) return;
+
+    var isEnCurrent = enEl.getAttribute('data-is-current') === '1';
+    switcherEl.classList.toggle('active', isEnCurrent);
+    var circle = switcherEl.querySelector('.switcher-circle');
+    if (circle) circle.classList.toggle('active', isEnCurrent);
+    enEl.classList.toggle('active', isEnCurrent);
+    ruEl.classList.toggle('active', !isEnCurrent);
+
+    ruEl.addEventListener('click', function (e) {
+      var url = ruEl.getAttribute('data-url');
+      if (ruEl.getAttribute('data-is-current') !== '1' && url) {
+        e.stopImmediatePropagation();
+        window.location.href = url;
+      }
+    }, true);
+
+    enEl.addEventListener('click', function (e) {
+      var url = enEl.getAttribute('data-url');
+      if (enEl.getAttribute('data-is-current') !== '1' && url) {
+        e.stopImmediatePropagation();
+        window.location.href = url;
+      }
+    }, true);
+
+    switcherEl.addEventListener('click', function (e) {
+      var isEnActive = enEl.getAttribute('data-is-current') === '1';
+      var targetEl = isEnActive ? ruEl : enEl;
+      var url = targetEl.getAttribute('data-url');
+      if (url) {
+        e.stopImmediatePropagation();
+        window.location.href = url;
+      }
+    }, true);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLangSwitcher);
+  } else {
+    initLangSwitcher();
+  }
+})();
+</script>
+</body>
+
+</html>

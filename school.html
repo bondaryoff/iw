@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<title>Oapo</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap&_v=20251223154107" rel="stylesheet" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20251223154107" rel="stylesheet">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20251223154107" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+<body>
+
+	<!-- <div class="pc-pp">
+  <div class="pPixel" data-show="true">
+    <div class="pPixel__img" data-img="img/ppixel/school.webp" data-position="50% 0px" data-height="15000px" data-opacity=".5">
+    </div>
+  </div>
+</div> -->
+	<!-- <div class="tablet-pp">
+  <div class="pPixel" data-show="true">
+    <div class="pPixel__img" data-img="img/ppixel/school-t.webp" data-position="50% 0px" data-height="15000px" data-opacity=".5">
+    </div>
+  </div>
+</div> -->
+	<div class="mobile-pp">
+		<div class="pPixel" data-show="true">
+			<div class="pPixel__img" data-img="img/ppixel/school-m.webp" data-position="50% 0px" data-height="15000px" data-opacity=".5">
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="container header__inner">
+				<a href="#" class="header__logo"><img src="img/logo.svg" alt="logo" /></a>
+				<div class="header__language">
+					<div class="language-switcher">
+						<span class="language-option" id="ru">RU</span>
+						<div class="switcher">
+							<div class="switcher-circle"></div>
+						</div>
+						<span class="language-option" id="en">EN</span>
+					</div>
+				</div>
+				<div class="header__social header-social">
+					<ul class="header-social__list">
+						<li>
+							<a href="#"><svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.3912 0.5C17.2457 0.505063 19.3834 0.527002 21.6555 0.623195L22.4619 0.660322C24.7484 0.773392 27.0334 0.969154 28.1678 1.30161C29.6799 1.75052 30.8671 3.05672 31.2688 4.71395C31.9088 7.34662 31.9888 12.4803 31.9984 13.7241L32 13.9806V14.2742C31.9888 15.518 31.9088 20.6534 31.2688 23.2844C30.8623 24.9467 29.6735 26.2545 28.1678 26.6967C27.0334 27.0292 24.7484 27.2249 22.4619 27.338L21.6555 27.3768C19.3834 27.4713 17.2457 27.4949 16.3912 27.4983L16.0152 27.5H15.6072C13.7991 27.4882 6.23711 27.4021 3.83059 26.6967C2.32012 26.2478 1.13126 24.9416 0.729637 23.2844C0.0896046 20.6517 0.00960048 15.518 0 14.2742V13.7241C0.00960048 12.4803 0.0896046 7.34493 0.729637 4.71395C1.13606 3.05166 2.32492 1.74376 3.83219 1.3033C6.23711 0.596193 13.8007 0.510126 15.6088 0.5H16.3912ZM12.799 8.09422V19.9075L22.3995 14.0008L12.799 8.09422Z" fill="#A96A7D" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15 0C6.71625 0 0 6.71625 0 15C0 23.2838 6.71625 30 15 30C23.2838 30 30 23.2838 30 15C30 6.71625 23.2838 0 15 0ZM22.3675 10.2762L19.905 21.8762C19.7237 22.6987 19.2337 22.8988 18.55 22.5113L14.8 19.7487L12.9925 21.4913C12.9039 21.6059 12.7903 21.6987 12.6603 21.7627C12.5303 21.8266 12.3874 21.8599 12.2425 21.86H12.2362L12.5025 18.0425L19.4525 11.765C19.7525 11.4987 19.385 11.3475 18.9862 11.6138L10.4 17.0212L6.7 15.8663C5.9 15.6125 5.8775 15.0663 6.86875 14.6737L21.3263 9.10125C21.9988 8.85625 22.5837 9.26125 22.3662 10.2775L22.3675 10.2762Z" fill="#A96A7D" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.4392 0.344496C16.4608 0.340576 17.4824 0.350843 18.5037 0.375295L18.7752 0.385095C19.0888 0.396294 19.3982 0.410294 19.772 0.427093C21.2615 0.497091 22.2779 0.732283 23.1696 1.07807C24.0936 1.43366 24.8719 1.91524 25.6503 2.69362C26.362 3.39304 26.9128 4.23909 27.2644 5.17293C27.6102 6.0647 27.8454 7.08247 27.9154 8.57201C27.9322 8.9444 27.9462 9.25519 27.9574 9.56878L27.9658 9.84037C27.9906 10.8612 28.0014 11.8823 27.998 12.9035L27.9994 13.9478V15.7818C28.0028 16.8034 27.9921 17.825 27.9672 18.8463L27.9588 19.1179C27.9476 19.4314 27.9336 19.7408 27.9168 20.1146C27.8468 21.6042 27.6088 22.6205 27.2644 23.5123C26.9139 24.4471 26.363 25.2939 25.6503 25.993C24.9503 26.7046 24.1038 27.2554 23.1696 27.6072C22.2779 27.953 21.2615 28.1881 19.772 28.2581C19.3982 28.2749 19.0888 28.2889 18.7752 28.3001L18.5037 28.3085C17.4824 28.3334 16.4608 28.3442 15.4392 28.3407L14.3949 28.3421H12.5624C11.5408 28.3456 10.5192 28.3349 9.49792 28.3099L9.22633 28.3015C8.89401 28.2895 8.56175 28.2755 8.22959 28.2595C6.74006 28.1895 5.72371 27.9516 4.83056 27.6072C3.89637 27.2563 3.05018 26.7054 2.35129 25.993C1.63879 25.2934 1.08747 24.4469 0.73577 23.5123C0.389988 22.6205 0.1548 21.6042 0.0848034 20.1146C0.0692122 19.7824 0.0552128 19.4502 0.0428056 19.1179L0.0358061 18.8463C0.00999644 17.825 -0.00167088 16.8034 0.00080776 15.7818V12.9035C-0.00309939 11.8823 0.00716784 10.8612 0.0316063 9.84037L0.0414057 9.56878C0.0526052 9.25519 0.0666044 8.9444 0.0834035 8.57201C0.1534 7.08107 0.388588 6.0661 0.73437 5.17293C1.08627 4.23863 1.63867 3.39282 2.35269 2.69502C3.0511 1.98209 3.89675 1.43026 4.83056 1.07807C5.72371 0.732283 6.73866 0.497091 8.22959 0.427093L9.22633 0.385095L9.49792 0.378095C10.5187 0.352298 11.5398 0.34063 12.561 0.343096L15.4392 0.344496ZM14.0001 7.34426C13.0726 7.33114 12.1518 7.50249 11.2912 7.84833C10.4305 8.19418 9.64722 8.70764 8.98673 9.35887C8.32624 10.0101 7.80177 10.7861 7.44379 11.6418C7.08581 12.4975 6.90146 13.4158 6.90146 14.3433C6.90146 15.2709 7.08581 16.1892 7.44379 17.0449C7.80177 17.9005 8.32624 18.6765 8.98673 19.3278C9.64722 19.979 10.4305 20.4925 11.2912 20.8383C12.1518 21.1842 13.0726 21.3555 14.0001 21.3424C15.8565 21.3424 17.6369 20.6049 18.9496 19.2922C20.2623 17.9795 20.9997 16.1991 20.9997 14.3426C20.9997 12.4862 20.2623 10.7057 18.9496 9.39304C17.6369 8.08033 15.8565 7.34426 14.0001 7.34426ZM14.0001 10.1442C14.558 10.1339 15.1123 10.2349 15.6307 10.4412C16.1491 10.6476 16.6212 10.9552 17.0194 11.3461C17.4176 11.737 17.7339 12.2033 17.9499 12.7178C18.1659 13.2322 18.2772 13.7846 18.2772 14.3426C18.2773 14.9006 18.1662 15.453 17.9505 15.9676C17.7347 16.4821 17.4185 16.9485 17.0204 17.3395C16.6224 17.7306 16.1504 18.0383 15.632 18.2449C15.1137 18.4514 14.5594 18.5526 14.0015 18.5425C12.8876 18.5425 11.8194 18.1 11.0318 17.3124C10.2442 16.5247 9.80171 15.4565 9.80171 14.3426C9.80171 13.2287 10.2442 12.1605 11.0318 11.3729C11.8194 10.5852 12.8876 10.1428 14.0015 10.1428L14.0001 10.1442ZM21.3497 5.24433C20.8981 5.26241 20.471 5.45453 20.1578 5.78047C19.8447 6.10641 19.6698 6.54087 19.6698 6.99287C19.6698 7.44487 19.8447 7.87933 20.1578 8.20527C20.471 8.53121 20.8981 8.72333 21.3497 8.74141C21.8138 8.74141 22.2589 8.55704 22.5871 8.22886C22.9153 7.90069 23.0996 7.45558 23.0996 6.99147C23.0996 6.52736 22.9153 6.08225 22.5871 5.75408C22.2589 5.4259 21.8138 5.24153 21.3497 5.24153V5.24433Z" fill="#A96A7D" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__actions">
+					<a href="#" class="btn">Подписаться</a>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Школа</a></li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Книги</a>
+								<div class="sub-menu">
+									<ul class="sub-menu__list">
+										<li class="sub-menu__item">
+											<a href="#" class="sub-menu__link">Европа во мне</a>
+										</li>
+										<li class="sub-menu__item">
+											<a href="#" class="sub-menu__link">Держись и пиши</a>
+										</li>
+										<li class="sub-menu__item">
+											<a href="#" class="sub-menu__link">Сарочае радыё</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Выступления</a>
+								<div class="sub-menu">
+									<ul class="sub-menu__list">
+										<li class="sub-menu__item">
+											<a href="#" class="sub-menu__link">Конференции</a>
+										</li>
+										<li class="sub-menu__item">
+											<a href="#" class="sub-menu__link">Интервью</a>
+										</li>
+										<li class="sub-menu__item">
+											<a href="#" class="sub-menu__link">Подкасты</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu__item"><a href="#" class="menu__link">Ретриты</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="school-hero" data-aos="fade-up">
+				<div class="container">
+					<div class="school-hero__inner">
+						<h1 class="school-hero__title">«Ловец слов»</h1>
+						<div class="school-hero__sub-title">Школа смелой творческой жизни</div>
+						<div class="school-hero__block">
+							<div class="school-hero__text">
+								<p>
+									Для тех, кто хочет жить, создавать и общаться смело и красиво.Для
+									авторов проектов, текстов, событий, жизни. Для всех, кому ценны
+									личностный рост, развитие, созидание, искусство и внимательное
+									отношение к себе и миру. Для тех, кто ищет глубины, красоты и сияния
+									в каждом дне. И кто чувствует, что <b>слова — большая сила.</b>
+								</p>
+							</div>
+						</div>
+						<div class="school-hero__bg">
+							<img src="img/school-bg.webp" alt="bg" class="desktop" />
+							<img src="img/school-bg-tablet.webp" alt="char" class="tablet" />
+							<img src="img/school-bg-mobile.webp" alt="char" class="mobile" />
+						</div>
+
+						<div class="school-hero__decor">
+							<div class="school-hero__char">
+								<img src="img/school-char.webp" alt="char" />
+
+							</div>
+							<div class="school-hero__char">
+								<img src="img/school-char-head.webp" alt="char" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section courses">
+				<div class="section-head">
+					<h2 class="section-title"><span>Каталог</span> курсов</h2>
+				</div>
+				<div class="courses__body">
+					<div class="slide-tape">
+						<div class="slide-tape__col">
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-4.webp&quot;)">
+								<div class="course-item__label"><span>Мастерская</span></div>
+								<h5 class="course-item__title">Тропы и фигуры: драгоценности текста. Мастерская текстов</h5>
+							</div>
+
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-2.webp&quot;)">
+								<div class="course-item__label"><span>Вебинар</span></div>
+								<h5 class="course-item__title">Пишем сериал в соцсетях</h5>
+							</div>
+
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-3.webp&quot;)">
+								<div class="course-item__label"><span>Курс</span></div>
+								<h5 class="course-item__title">Писательские скетчи</h5>
+							</div>
+
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-4.webp&quot;)">
+								<div class="course-item__label"><span>Мастерская</span></div>
+								<h5 class="course-item__title">Тропы и фигуры: драгоценности текста</h5>
+							</div>
+
+						</div>
+						<div class="slide-tape__col" aria-hidden="true">
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-4.webp&quot;)">
+								<div class="course-item__label"><span>Мастерская</span></div>
+								<h5 class="course-item__title">Тропы и фигуры: драгоценности текста. Мастерская текстов</h5>
+							</div>
+
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-2.webp&quot;)">
+								<div class="course-item__label"><span>Вебинар</span></div>
+								<h5 class="course-item__title">Пишем сериал в соцсетях</h5>
+							</div>
+
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-3.webp&quot;)">
+								<div class="course-item__label"><span>Курс</span></div>
+								<h5 class="course-item__title">Писательские скетчи</h5>
+							</div>
+
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-4.webp&quot;)">
+								<div class="course-item__label"><span>Мастерская</span></div>
+								<h5 class="course-item__title">Тропы и фигуры: драгоценности текста</h5>
+							</div>
+
+						</div>
+					</div>
+					<div class="slide-tape">
+						<div class="slide-tape__col">
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-4.webp&quot;)">
+								<div class="course-item__label"><span>Мастерская</span></div>
+								<h5 class="course-item__title">Тропы и фигуры: драгоценности текста. Мастерская текстов</h5>
+							</div>
+
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-2.webp&quot;)">
+								<div class="course-item__label"><span>Вебинар</span></div>
+								<h5 class="course-item__title">Пишем сериал в соцсетях</h5>
+							</div>
+
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-3.webp&quot;)">
+								<div class="course-item__label"><span>Курс</span></div>
+								<h5 class="course-item__title">Писательские скетчи</h5>
+							</div>
+
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-4.webp&quot;)">
+								<div class="course-item__label"><span>Мастерская</span></div>
+								<h5 class="course-item__title">Тропы и фигуры: драгоценности текста</h5>
+							</div>
+
+						</div>
+						<div class="slide-tape__col" aria-hidden="true">
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-4.webp&quot;)">
+								<div class="course-item__label"><span>Мастерская</span></div>
+								<h5 class="course-item__title">Тропы и фигуры: драгоценности текста. Мастерская текстов</h5>
+							</div>
+
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-2.webp&quot;)">
+								<div class="course-item__label"><span>Вебинар</span></div>
+								<h5 class="course-item__title">Пишем сериал в соцсетях</h5>
+							</div>
+
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-3.webp&quot;)">
+								<div class="course-item__label"><span>Курс</span></div>
+								<h5 class="course-item__title">Писательские скетчи</h5>
+							</div>
+
+							<div class="course-item" style="background-image: url(&quot;img/courses/course-4.webp&quot;)">
+								<div class="course-item__label"><span>Мастерская</span></div>
+								<h5 class="course-item__title">Тропы и фигуры: драгоценности текста</h5>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="courses__bottom">
+						<div class="courses__text">
+							<p><b>Все курсы</b> вы найдёте на странице каталога курсов</p>
+						</div>
+						<a href="#" class="btn-lg btn-lg--accent">Смотреть все курсы</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="training" data-aos="fade-up">
+				<div class="container">
+					<div class="training__head">
+						<h2 class="training__title"><span>Форматы</span> обучения</h2>
+					</div>
+					<div class="training__body">
+						<div class="training-item">
+							<div class="training-item__decor">
+								<svg width="214" height="180" viewBox="0 0 214 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M136.903 53.1452C115.406 38.1636 107.876 4.21425 81.8313 1.32962C53.1793 -1.84376 22.5444 14.1896 7.55602 38.8193C-6.57738 62.0441 4.23203 90.9385 11.3317 117.178C17.1021 138.505 24.9721 160.318 43.6303 172.147C60.995 183.156 82.7413 179.339 102.889 175.225C120.95 171.537 135.21 161.493 149.961 150.435C173.652 132.677 216.899 122.058 212.961 92.7162C209.008 63.2678 161.277 70.1319 136.903 53.1452Z" stroke="#A96A7D" stroke-opacity="0.5" />
+								</svg>
+								<svg width="209" height="175" viewBox="0 0 209 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M121.83 158.27C94.379 158.74 67.9915 183.854 43.6543 171.152C16.881 157.179 -0.393047 125.353 0.964232 95.1908C2.24409 66.7493 28.5301 47.9449 50.0384 29.2817C67.5198 14.1128 87.1109 -0.25227 110.251 0.360664C131.786 0.931116 148.469 16.9481 163.587 32.2894C177.14 46.0424 183.672 63.1003 190.04 81.3263C200.266 110.597 219.533 127.872 198.962 151.077C178.316 174.367 152.955 157.738 121.83 158.27Z" fill="#FFEEF2" />
+								</svg>
+
+								<div class="training-item__icon">
+									<img src="img/icons/new.svg" alt="icon" />
+								</div>
+							</div>
+							<div class="training-item__content">
+								<h3 class="training-item__title">Новинки</h3>
+								<div class="training-item__text">
+									<p>Этих продуктов еще нет в записи и, возможно, не
+										будет. Вы можете стать их первооткрывателями и проходить их в режиме
+										реального времени с группой и обратной связью кураторов или Екатерины.
+										Если не хотите пропустить анонс следующего курса, подпишитесь на
+										email-рассылку.</p>
+								</div>
+							</div>
+							<div class="training-item__actions">
+								<a href="#" class="btn-lg btn-lg--accent">Выбрать курс-новинку</a>
+								<a href="#" class="btn-lg">Подписаться на
+									анонсы</a>
+							</div>
+						</div>
+
+						<div class="training-item">
+							<div class="training-item__decor">
+								<svg width="193" height="166" viewBox="0 0 193 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M76.0017 19.5762C51.1602 25.7882 17.5282 16.4303 4.58803 38.5659C-8.35255 60.7023 13.4557 86.4933 22.934 110.355C30.6646 129.816 34.9621 153.148 53.7491 162.328C71.9205 171.206 91.7979 158.508 111.387 153.573C131.379 148.536 153.567 148.934 167.461 133.68C184.201 115.301 195.251 90.4911 191.232 65.911C186.909 39.4771 170.93 13.1496 146.121 3.17372C122.946 -6.14476 100.21 13.5226 76.0017 19.5762Z" stroke="#A96A7D" stroke-opacity="0.5" stroke-width="0.765238" />
+								</svg>
+
+								<svg width="205" height="180" viewBox="0 0 205 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M128.003 25.2423C153.595 33.9339 189.785 27.0143 201.477 51.4189C213.169 75.8242 187.992 101.054 175.952 125.326C166.131 145.122 159.587 169.287 139.028 177.309C119.143 185.068 99.3352 169.985 79.157 163.093C58.5636 156.059 35.1893 154.55 21.8972 137.299C5.88217 116.515 -3.58926 89.4628 2.77095 63.9609C9.61083 36.5357 28.7039 10.2353 55.6663 1.89917C80.8519 -5.8876 103.063 16.7722 128.003 25.2423Z" fill="#FFEEF2" />
+								</svg>
+
+								<div class="training-item__icon">
+									<img src="img/icons/cinema.svg" alt="icon" />
+								</div>
+							</div>
+							<div class="training-item__content">
+								<h3 class="training-item__title">В записи</h3>
+								<div class="training-item__text">
+									<p>
+										Вы можете купить большинство продуктов школы «Ловец слов» в записи и
+										проходить их самостоятельно в удобное для себя время. Этот формат не
+										предусматривает обратной связи от кураторов и Екатерины, но иногда есть
+										возможность докупить эти опции отдельно.
+									</p>
+								</div>
+							</div>
+							<div class="training-item__actions">
+								<a href="#" class="btn-lg btn-lg--accent">Выбрать курс в записи</a>
+							</div>
+						</div>
+
+
+						<div class="training-item">
+							<div class="training-item__decor">
+								<svg width="193" height="166" viewBox="0 0 193 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M76.0017 19.5762C51.1602 25.7882 17.5282 16.4303 4.58803 38.5659C-8.35255 60.7023 13.4557 86.4933 22.934 110.355C30.6646 129.816 34.9621 153.148 53.7491 162.328C71.9205 171.206 91.7979 158.508 111.387 153.573C131.379 148.536 153.567 148.934 167.461 133.68C184.201 115.301 195.251 90.4911 191.232 65.911C186.909 39.4771 170.93 13.1496 146.121 3.17372C122.946 -6.14476 100.21 13.5226 76.0017 19.5762Z" stroke="#A96A7D" stroke-opacity="0.5" stroke-width="0.765238" />
+								</svg>
+
+								<svg width="205" height="180" viewBox="0 0 205 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M128.003 25.2423C153.595 33.9339 189.785 27.0143 201.477 51.4189C213.169 75.8242 187.992 101.054 175.952 125.326C166.131 145.122 159.587 169.287 139.028 177.309C119.143 185.068 99.3352 169.985 79.157 163.093C58.5636 156.059 35.1893 154.55 21.8972 137.299C5.88217 116.515 -3.58926 89.4628 2.77095 63.9609C9.61083 36.5357 28.7039 10.2353 55.6663 1.89917C80.8519 -5.8876 103.063 16.7722 128.003 25.2423Z" fill="#FFEEF2" />
+								</svg>
+
+								<div class="training-item__icon">
+									<img src="img/icons/people.svg" alt="В группе" />
+								</div>
+							</div>
+							<div class="training-item__content">
+								<h3 class="training-item__title">В группе</h3>
+								<div class="training-item__text">
+									<p>
+										Этот формат позволяет проходить готовые курсы школы «Ловец слов» в
+										группе с другими участникам, с чатом, прямыми эфирами, поддержкой
+										кураторов или Екатерины Оаро (в зависимости от программы). Вы
+										можете записаться в лист ожидания. Как только группа на ваш курс
+										наберется, обучение стартует. Если вам не подойдет время начала,
+										мы сможем перевести вас в следующую группу.
+									</p>
+								</div>
+							</div>
+							<div class="training-item__actions">
+								<a href="#" class="btn-lg btn-lg--accent">Выбрать курс в группе</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="current-courses">
+				<div class="container">
+					<div class="current-courses__head">
+						<!-- <h2 class="current-courses__title"><span>Актуальные</span> курсы</h2> -->
+						<h2 class="current-courses__title"><span>Актуальные</span> курсы</h2>
+					</div>
+					<div class="current-courses__body">
+						<div class="current-courses__slider courses-slider">
+							<div class="courses-slider__content">
+								<div class="courses-swiper swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<article class="course-slide">
+												<div class="course-slide__img">
+													<img src="img/school-item-1.webp" alt="Тропы и фигуры: драгоценности текста" />
+												</div>
+												<div class="course-slide__body">
+													<div class="course-slide__label"><span>Мастерская</span></div>
+													<div class="course-slide__title">Тропы и фигуры: драгоценности текста</div>
+													<div class="course-slide__sub-title">4 мастер-класса по 2 часа</div>
+													<div class="course-slide__text">
+														<p>4 мастер-класса по 2 часа — сбалансированный коктейль теории и практики.Подойдет тем, кто хочет еще больше наслаждаться текстами мастеров слова,видя и понимая, в чем их виртуозность; писать образнее, ярче,неожиданней и ритмичней; зарабатывать текстами больше, чем другие;создавать тексты, которые растащат на цитаты.</p>
+													</div>
+												</div>
+
+												<div class="course-slide__footer">
+													<div class="course-slide__actions">
+														<a href="#" class="button">Подробнее</a>
+														<a href="#" class="button button--accent">Записаться в группу</a>
+													</div>
+													<div class="course-slide__price">49.90 €</div>
+												</div>
+											</article>
+
+										</div>
+										<div class="swiper-slide">
+											<article class="course-slide">
+												<div class="course-slide__img">
+													<img src="img/school-item-1.webp" alt="Пишем сериал в соцсетях" />
+												</div>
+												<div class="course-slide__body">
+													<div class="course-slide__label"><span>Вебинар</span></div>
+													<div class="course-slide__title">Пишем сериал в соцсетях</div>
+													<div class="course-slide__sub-title">3х часовой вебинар</div>
+													<div class="course-slide__text">
+														<p>Почти 3 часа концентрированной информации о том, как рассказывать даже длинные истории так, чтобы читатели не могли от них оторваться и нетерпеливо ждали нового эпизода. Подойдет тем, кто ведет блог или хочет начать его вести, а еще — тем, кто зарабатывает в соцсетях, хочет запомниться клиентам, любит писать и хочет делать это лучше.</p>
+													</div>
+												</div>
+
+												<div class="course-slide__footer">
+													<div class="course-slide__actions">
+														<a href="#" class="button">Подробнее</a>
+														<a href="#" class="button button--accent">Записаться в группу</a>
+													</div>
+													<div class="course-slide__price">49.90 €</div>
+												</div>
+											</article>
+
+										</div>
+										<div class="swiper-slide">
+											<article class="course-slide">
+												<div class="course-slide__img">
+													<img src="img/school-item-1.webp" alt="Тропы и фигуры: драгоценности текста" />
+												</div>
+												<div class="course-slide__body">
+													<div class="course-slide__label"><span>Мастерская</span></div>
+													<div class="course-slide__title">Тропы и фигуры: драгоценности текста</div>
+													<div class="course-slide__sub-title">4 мастер-класса по 2 часа</div>
+													<div class="course-slide__text">
+														<p>4 мастер-класса по 2 часа — сбалансированный коктейль теории и практики.Подойдет тем, кто хочет еще больше наслаждаться текстами мастеров слова,видя и понимая, в чем их виртуозность; писать образнее, ярче,неожиданней и ритмичней; зарабатывать текстами больше, чем другие;создавать тексты, которые растащат на цитаты.</p>
+													</div>
+												</div>
+
+												<div class="course-slide__footer">
+													<div class="course-slide__actions">
+														<a href="#" class="button">Подробнее</a>
+														<a href="#" class="button button--accent">Записаться в группу</a>
+													</div>
+													<div class="course-slide__price">49.90 €</div>
+												</div>
+											</article>
+
+										</div>
+										<div class="swiper-slide">
+											<article class="course-slide">
+												<div class="course-slide__img">
+													<img src="img/school-item-1.webp" alt="Пишем сериал в соцсетях" />
+												</div>
+												<div class="course-slide__body">
+													<div class="course-slide__label"><span>Вебинар</span></div>
+													<div class="course-slide__title">Пишем сериал в соцсетях</div>
+													<div class="course-slide__sub-title">3х часовой вебинар</div>
+													<div class="course-slide__text">
+														<p>Почти 3 часа концентрированной информации о том, как рассказывать даже длинные истории так, чтобы читатели не могли от них оторваться и нетерпеливо ждали нового эпизода. Подойдет тем, кто ведет блог или хочет начать его вести, а еще — тем, кто зарабатывает в соцсетях, хочет запомниться клиентам, любит писать и хочет делать это лучше.</p>
+													</div>
+												</div>
+
+												<div class="course-slide__footer">
+													<div class="course-slide__actions">
+														<a href="#" class="button">Подробнее</a>
+														<a href="#" class="button button--accent">Записаться в группу</a>
+													</div>
+													<div class="course-slide__price">49.90 €</div>
+												</div>
+											</article>
+
+										</div>
+									</div>
+								</div>
+								<div class="courses-slider__controls">
+									<button type="button" class="slider-button-prev"></button>
+									<button type="button" class="slider-button-next"></button>
+								</div>
+							</div>
+							<div class="courses-slider__navs">
+								<div class="slider-pagination"></div>
+								<div class="slider-scrollbar"></div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section school-counters" data-watch>
+				<div class="container">
+					<div class="section-head">
+						<h2 class="section-title">О школе <span>в цифрах</span></h2>
+					</div>
+					<div class="school-counters__body">
+						<div class="school-counters__items">
+							<div class="school-counter">
+								<div class="school-counter__title">
+									> <span data-digits-counter>1400</span>
+								</div>
+								<div class="school-counter__text">прошедших курсы <b>студентов</b></div>
+							</div>
+
+							<div class="school-counter">
+								<div class="school-counter__title">
+									> <span data-digits-counter>20000</span>
+								</div>
+								<div class="school-counter__text"><b>читателей</b> книг официально</div>
+							</div>
+
+							<div class="school-counter">
+								<div class="school-counter__title">
+									> <span data-digits-counter>20</span>
+								</div>
+								<div class="school-counter__text">готовых <b>курсов</b> и <b>вебинаров</b></div>
+							</div>
+
+							<div class="school-counter">
+								<div class="school-counter__title">
+									> <span data-digits-counter>30</span>
+								</div>
+								<div class="school-counter__text">изданных <b>книг</b> студентов, в т.ч. бестселлеры</div>
+							</div>
+
+							<div class="school-counter">
+								<div class="school-counter__title">
+									> <span data-digits-counter>150</span>
+								</div>
+								<div class="school-counter__text"><b>часов</b> концентрированного обучающего материала</div>
+							</div>
+
+							<div class="school-counter">
+								<div class="school-counter__title">
+									> <span data-digits-counter>60</span>
+								</div>
+								<div class="school-counter__text">человек, ставших профессиональными <b>редакторами</b></div>
+							</div>
+
+							<div class="school-counter">
+								<div class="school-counter__title">
+									> <span data-digits-counter>100</span>
+								</div>
+								<div class="school-counter__text"><b>проведенных</b> прямых эфиров, презентаций, вебинаров, выступлений на конференциях</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="school-author">
+				<div class="container">
+					<div class="school-author__inner">
+						<div class="school-author__top row">
+							<div class="school-author__content">
+								<h2 class="school-author__title"><span>Автор</span> школы</h2>
+								<div class="school-author__text">
+									<p>
+										Эта <b>школа</b>, конечно, для авторов. Авторов своей жизни, своих
+										намерений и своих текстов. Здесь создают тексты, которые
+										дочитывают до конца, здесь учатся общению (с издательствами,
+										читателями и миром), здесь — сбываются.
+									</p>
+								</div>
+							</div>
+							<div class="school-author__video" data-da=".school-author__content,1023.98,1">
+								<div class="school-video">
+									<div class="school-video__frame">
+										<img src="img/school-video.webp" alt="video" />
+									</div>
+									<div class="school-video__layout">
+										<button class="school-video__play">
+											<svg width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M22.8795 13.7329C22.8803 14.0915 22.7918 14.4443 22.6224 14.7569C22.4531 15.0695 22.2087 15.3313 21.9131 15.5167L3.59244 27.1548C3.28356 27.3512 2.92979 27.4584 2.56766 27.4654C2.20553 27.4723 1.84818 27.3788 1.53251 27.1944C1.21984 27.0129 0.959385 26.7481 0.777917 26.4274C0.59645 26.1067 0.500522 25.7416 0.5 25.3696V2.09614C0.500522 1.72416 0.59645 1.35904 0.777917 1.03833C0.959385 0.717611 1.21984 0.452875 1.53251 0.271342C1.84818 0.0869456 2.20553 -0.00660141 2.56766 0.000362248C2.92979 0.0073259 3.28356 0.114548 3.59244 0.310954L21.9131 11.949C22.2087 12.1345 22.4531 12.3963 22.6224 12.7088C22.7918 13.0214 22.8803 13.3742 22.8795 13.7329Z" fill="#A96A7D" />
+											</svg>
+										</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="school-author__speech">
+							<div class="speech-author">
+								<div class="speech-author__inner">
+									<div class="speech-author__left">
+										<div class="speech-author__img">
+											<img src="img/author-speech.webp" alt="Oaro" />
+										</div>
+										<ul class="speech-author__items">
+											<li>
+												Автор бестселлеров <b>«Держись и пиши!»</b> и
+												<b>«Европа во мне»</b>
+											</li>
+											<li>Спикер на <b>конференциях</b> и <b>ретритах</b></li>
+											<li>Создательница <b>школы «Ловец слов»</b></li>
+											<li>
+												Помогает создавать <b>смелее</b> и писать <b>виртуознее</b>
+											</li>
+										</ul>
+									</div>
+									<div class="speech-author__right">
+										<div class="speech-author__content">
+											<div class="speech-author__title">Привет!</div>
+											<div class="speech-author__text">
+												<p>
+													Текст может вырасти из смутного непрожитого чувства или
+													вертящегося в голове вопроса, из необходимости суммировать
+													свой опыт и разобраться, о чем он, из потребности решить
+													социальный вопрос – да из чего уголно.
+												</p>
+												<p>
+													Поэтому я больше не верю в писательский отпуск. Я верю в
+													заметки на салфетках, в ранние подъемы или творческие ночные
+													часы, в то, что стоит не ждать подходящего времени, а надо
+													самостоятельно его себе создавать.
+												</p>
+											</div>
+											<div class="speech-author__signature">
+												<span>_ Е. Оаро</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="review-slider">
+				<div class="container">
+					<div class="review-slider__wrapper">
+						<h2 class="review-slider__title">Отзывы </h2>
+						<div class="review-slider__slider">
+							<div class="review-swiper swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="review-slide">
+											<div class="review-slide__top">
+												<div class="review-slide__avatar">
+													<img src="img/avatars/avatar-1.webp" alt="avatar" />
+												</div>
+												<div class="review-slide__head">
+													<div class="review-slide__col">
+														<h3 class="review-slide__title">
+															Я могу рекомендовать Екатерину как чуткого <br />
+															и профессионального спикера
+														</h3>
+														<div class="review-slide__line">
+															<div class="review-slide__name">Юлия Малкова</div>
+															<a href="#" class="review-slide__link">ProWomen.by</a>
+														</div>
+													</div>
+													<div class="review-slide__date">12.11.23</div>
+												</div>
+											</div>
+											<div class="review-slide__body">
+												<div class="review-slide__text">
+													<p>Нам посчастливилось поработать с Екатериной дважды.</p>
+													<p>
+														Одна из задач ProWomen By — повышение видимости эксперток
+														в публичном пространстве. Мы не только продвигаем
+														женщин-спикеров, но и стараемся мотивировать эксперток
+														писать статьи. Одна из наших программ «Продлёнка»
+														подразумевала поддержку и сопровождение на пути создания
+														статьи и мы пригласили Екатерину для вдохновляющей
+														встречи, которая завершала...
+													</p>
+												</div>
+											</div>
+											<div class="review-slide__bottom">
+												<button class="btn-lg btn-lg--accent" data-fancybox data-src="#review-modal">
+													Читать полностью
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="review-slide">
+											<div class="review-slide__top">
+												<div class="review-slide__avatar">
+													<img src="img/avatars/avatar-1.webp" alt="avatar" />
+												</div>
+												<div class="review-slide__head">
+													<div class="review-slide__col">
+														<h3 class="review-slide__title">
+															Я могу рекомендовать Екатерину как чуткого <br />
+															и профессионального спикера
+														</h3>
+														<div class="review-slide__line">
+															<div class="review-slide__name">Юлия Малкова</div>
+															<a href="#" class="review-slide__link">ProWomen.by</a>
+														</div>
+													</div>
+													<div class="review-slide__date">12.11.23</div>
+												</div>
+											</div>
+											<div class="review-slide__body">
+												<div class="review-slide__text">
+													<p>Нам посчастливилось поработать с Екатериной дважды.</p>
+													<p>
+														Одна из задач ProWomen By — повышение видимости эксперток
+														в публичном пространстве. Мы не только продвигаем
+														женщин-спикеров, но и стараемся мотивировать эксперток
+														писать статьи. Одна из наших программ «Продлёнка»
+														подразумевала поддержку и сопровождение на пути создания
+														статьи и мы пригласили Екатерину для вдохновляющей
+														встречи, которая завершала...
+													</p>
+												</div>
+											</div>
+											<div class="review-slide__bottom">
+												<button class="btn-lg btn-lg--accent" data-fancybox data-src="#review-modal">
+													Читать полностью
+												</button>>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="review-slide">
+											<div class="review-slide__top">
+												<div class="review-slide__avatar">
+													<img src="img/avatars/avatar-1.webp" alt="avatar" />
+												</div>
+												<div class="review-slide__head">
+													<div class="review-slide__col">
+														<h3 class="review-slide__title">
+															Я могу рекомендовать Екатерину как чуткого <br />
+															и профессионального спикера
+														</h3>
+														<div class="review-slide__line">
+															<div class="review-slide__name">Юлия Малкова</div>
+															<a href="#" class="review-slide__link">ProWomen.by</a>
+														</div>
+													</div>
+													<div class="review-slide__date">12.11.23</div>
+												</div>
+											</div>
+											<div class="review-slide__body">
+												<div class="review-slide__text">
+													<p>Нам посчастливилось поработать с Екатериной дважды.</p>
+													<p>
+														Одна из задач ProWomen By — повышение видимости эксперток
+														в публичном пространстве. Мы не только продвигаем
+														женщин-спикеров, но и стараемся мотивировать эксперток
+														писать статьи. Одна из наших программ «Продлёнка»
+														подразумевала поддержку и сопровождение на пути создания
+														статьи и мы пригласили Екатерину для вдохновляющей
+														встречи, которая завершала...
+													</p>
+												</div>
+											</div>
+											<div class="review-slide__bottom">
+												<button class="btn-lg btn-lg--accent" data-fancybox data-src="#review-modal">
+													Читать полностью
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="review-slider__nav">
+								<button type="button" class="review-button-prev slider-button-prev"></button>
+								<button type="button" class="review-button-next slider-button-next"></button>
+							</div>
+						</div>
+						<div class="review-pagination slider-pagination" data-da=".review-slider__nav,1023.98,1"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="footer-quote" style="background-image: url(&quot;img/school-footer-bg.webp&quot;)">
+				<div class="container">
+					<div class="footer-quote__content">
+						<div class="footer-quote__text">
+							<p>
+								“Для тех, кто хочет жить, создавать и общаться смело и
+								красиво”
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__left">
+						<a href="#" class="footer__logo"><img src="img/logo-light.svg" alt="logo" /></a>
+						<div class="footer__social footer-social">
+							<ul class="footer-social__list">
+								<li>
+									<a href="#">
+										<svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.3912 0.5C17.2457 0.505063 19.3834 0.527002 21.6555 0.623195L22.4619 0.660322C24.7484 0.773392 27.0334 0.969154 28.1678 1.30161C29.6799 1.75052 30.8671 3.05672 31.2688 4.71395C31.9088 7.34662 31.9888 12.4803 31.9984 13.7241L32 13.9806V14.2742C31.9888 15.518 31.9088 20.6534 31.2688 23.2844C30.8623 24.9467 29.6735 26.2545 28.1678 26.6967C27.0334 27.0292 24.7484 27.2249 22.4619 27.338L21.6555 27.3768C19.3834 27.4713 17.2457 27.4949 16.3912 27.4983L16.0152 27.5H15.6072C13.7991 27.4882 6.23711 27.4021 3.83059 26.6967C2.32012 26.2478 1.13126 24.9416 0.729637 23.2844C0.0896046 20.6517 0.00960048 15.518 0 14.2742V13.7241C0.00960048 12.4803 0.0896046 7.34493 0.729637 4.71395C1.13606 3.05166 2.32492 1.74376 3.83219 1.3033C6.23711 0.596193 13.8007 0.510126 15.6088 0.5H16.3912ZM12.799 8.09422V19.9075L22.3995 14.0008L12.799 8.09422Z" fill="#DBA96F" />
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15 0C6.71625 0 0 6.71625 0 15C0 23.2838 6.71625 30 15 30C23.2838 30 30 23.2838 30 15C30 6.71625 23.2838 0 15 0ZM22.3675 10.2762L19.905 21.8762C19.7237 22.6987 19.2337 22.8988 18.55 22.5113L14.8 19.7487L12.9925 21.4913C12.9039 21.6059 12.7903 21.6987 12.6603 21.7627C12.5303 21.8266 12.3874 21.8599 12.2425 21.86H12.2362L12.5025 18.0425L19.4525 11.765C19.7525 11.4987 19.385 11.3475 18.9862 11.6138L10.4 17.0212L6.7 15.8663C5.9 15.6125 5.8775 15.0663 6.86875 14.6737L21.3263 9.10125C21.9988 8.85625 22.5837 9.26125 22.3662 10.2775L22.3675 10.2762Z" fill="#DBA96F" />
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15.4392 0.00172249C16.4608 -0.00219768 17.4824 0.00806973 18.5037 0.0325215L18.7752 0.0423212C19.0888 0.0535208 19.3982 0.0675203 19.772 0.0843197C21.2615 0.154317 22.2779 0.38951 23.1696 0.735298C24.0936 1.09089 24.8719 1.57247 25.6503 2.35084C26.362 3.05027 26.9128 3.89632 27.2644 4.83016C27.6102 5.72193 27.8454 6.73969 27.9154 8.22924C27.9322 8.60163 27.9462 8.91242 27.9574 9.22601L27.9658 9.4976C27.9906 10.5184 28.0014 11.5396 27.998 12.5607L27.9994 13.6051V15.439C28.0028 16.4606 27.9921 17.4822 27.9672 18.5035L27.9588 18.7751C27.9476 19.0887 27.9336 19.3981 27.9168 19.7718C27.8468 21.2614 27.6088 22.2778 27.2644 23.1695C26.9139 24.1044 26.363 24.9511 25.6503 25.6502C24.9503 26.3619 24.1038 26.9127 23.1696 27.2644C22.2779 27.6102 21.2615 27.8454 19.772 27.9154C19.3982 27.9322 19.0888 27.9462 18.7752 27.9574L18.5037 27.9658C17.4824 27.9907 16.4608 28.0014 15.4392 27.998L14.3949 27.9994H12.5624C11.5408 28.0028 10.5192 27.9921 9.49792 27.9672L9.22633 27.9588C8.89401 27.9467 8.56175 27.9327 8.22959 27.9168C6.74006 27.8468 5.72371 27.6088 4.83056 27.2644C3.89637 26.9135 3.05018 26.3626 2.35129 25.6502C1.63879 24.9507 1.08747 24.1041 0.73577 23.1695C0.389988 22.2778 0.1548 21.2614 0.0848034 19.7718C0.0692122 19.4397 0.0552128 19.1074 0.0428056 18.7751L0.0358061 18.5035C0.00999644 17.4822 -0.00167088 16.4606 0.00080776 15.439V12.5607C-0.00309939 11.5396 0.00716784 10.5184 0.0316063 9.4976L0.0414057 9.22601C0.0526052 8.91242 0.0666044 8.60163 0.0834035 8.22924C0.1534 6.73829 0.388588 5.72333 0.73437 4.83016C1.08627 3.89586 1.63867 3.05004 2.35269 2.35224C3.0511 1.63932 3.89675 1.08749 4.83056 0.735298C5.72371 0.38951 6.73866 0.154317 8.22959 0.0843197L9.22633 0.0423212L9.49792 0.0353216C10.5187 0.0095244 11.5398 -0.00214312 12.561 0.000322644L15.4392 0.00172249ZM14.0001 7.00148C13.0726 6.98837 12.1518 7.15971 11.2912 7.50556C10.4305 7.85141 9.64722 8.36487 8.98673 9.01609C8.32624 9.66732 7.80177 10.4433 7.44379 11.299C7.08581 12.1547 6.90146 13.073 6.90146 14.0005C6.90146 14.9281 7.08581 15.8464 7.44379 16.7021C7.80177 17.5578 8.32624 18.3338 8.98673 18.985C9.64722 19.6362 10.4305 20.1497 11.2912 20.4955C12.1518 20.8414 13.0726 21.0127 14.0001 20.9996C15.8565 20.9996 17.6369 20.2621 18.9496 18.9494C20.2623 17.6367 20.9997 15.8563 20.9997 13.9998C20.9997 12.1434 20.2623 10.363 18.9496 9.05027C17.6369 7.73756 15.8565 7.00148 14.0001 7.00148ZM14.0001 9.80139C14.558 9.79111 15.1123 9.8921 15.6307 10.0985C16.1491 10.3048 16.6212 10.6124 17.0194 11.0033C17.4176 11.3942 17.7339 11.8605 17.9499 12.375C18.1659 12.8895 18.2772 13.4418 18.2772 13.9998C18.2773 14.5578 18.1662 15.1102 17.9505 15.6248C17.7347 16.1394 17.4185 16.6058 17.0204 16.9968C16.6224 17.3878 16.1504 17.6955 15.632 17.9021C15.1137 18.1086 14.5594 18.2098 14.0015 18.1997C12.8876 18.1997 11.8194 17.7572 11.0318 16.9696C10.2442 16.182 9.80171 15.1137 9.80171 13.9998C9.80171 12.886 10.2442 11.8177 11.0318 11.0301C11.8194 10.2425 12.8876 9.79999 14.0015 9.79999L14.0001 9.80139ZM21.3497 4.90156C20.8981 4.91963 20.471 5.11176 20.1578 5.4377C19.8447 5.76364 19.6698 6.1981 19.6698 6.6501C19.6698 7.10209 19.8447 7.53656 20.1578 7.86249C20.471 8.18843 20.8981 8.38056 21.3497 8.39864C21.8138 8.39864 22.2589 8.21427 22.5871 7.88609C22.9153 7.55791 23.0996 7.11281 23.0996 6.6487C23.0996 6.18458 22.9153 5.73948 22.5871 5.4113C22.2589 5.08312 21.8138 4.89876 21.3497 4.89876V4.90156Z" fill="#DBA96F" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a href="#" class="footer__vacancy">Вакансии проекта</a>
+					</div>
+					<div class="footer__links">
+						<a href="#">Биография</a>
+						<a href="#" class="btn-lg btn-lg--light">Школа</a>
+						<a href="#">Манифест</a>
+						<a href="#">Сопровождение авторов</a>
+						<a href="#">Подарки</a>
+						<a href="#">Блог</a>
+						<a href="#">Книги</a>
+					</div>
+					<div class="footer__content">
+						<div class="footer__text">
+							<p>
+								Хотите пригласить Екатерину на <b>интервью, подкаст</b> или
+								<b>конференцию</b>?
+							</p>
+						</div>
+						<a href="#" class="btn-lg btn-lg--accent btn-lg--reverse">Связаться</a>
+					</div>
+					<div class="footer__content">
+						<div class="footer__text">
+							<p>
+								Хотите подписаться на рассылку от Екатерины о продуктивной творческой жизни в удовольствие?
+							</p>
+						</div>
+						<a href="#" class="btn-lg btn-lg--accent btn-lg--reverse">Хочу</a>
+					</div>
+				</div>
+				<button class="go-to-top" type="button">to top</button>
+			</div>
+		</footer>
+
+	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20251223154107"></script>
+	<script src="js/app.min.js?_v=20251223154107"></script>
+	<script>
+		AOS.init();
+	</script>
+
+</body>
+
+</html>
